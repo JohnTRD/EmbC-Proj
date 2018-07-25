@@ -1,0 +1,20 @@
+Store Tariff in flash
+	- should be able to set tariffs via tower protocol
+FTM to change state to dormant after 15 seconds
+2 modes
+	-Intermediate
+	-Basic
+RTC - to track day time
+PIT - to keep track of time metering
+
+
+void __attribute__ ((interrupt)) LPTimer_ISR(void);
+&LPTimer_ISR,            /* 0x65
+
+
+sampling must be done 16 x per cycle
+if 50 hz, then 16 x 50 = 800
+sampling around every 1 ms?
+
+
+ftmISR > analogue get for channel 1 and 2 then multip[ly to get power.
